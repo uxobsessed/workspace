@@ -11,9 +11,9 @@ Happy Learning :D
 ---
 ### Included Plugins and Things I tried to set up
 
-1. Attachment Management Plugin: For automatic folder creation & nesting under `90 - Meta/_assets/images` depending on where you pasted images. ![Auto organized attachments showcase](<90 - Meta/_assets/images/README/IMG-20260206163250296.png>)
-2. Excalidraw (kind of WIP): For drawings, Helping with Flow diagrams and embedding right into your notes ![Excalidraw Showcase](<90 - Meta/_assets/images/README/IMG-20260206164013920.png>)
-3. Image Toolkit: Better viewing experience for images with scroll to zoom, full-screen, copy etc. Baked right into the edit view. ![Refined Image viewer showcase](<90 - Meta/_assets/images/README/IMG-20260206165129843.png>)
+1. Attachment Management Plugin: For automatic folder creation & nesting under `90 - Meta/_assets/images` depending on where you pasted images.
+2. Excalidraw (kind of WIP): For drawings, Helping with Flow diagrams and embedding right into your notes.
+3. Image Toolkit: Better viewing experience for images with scroll to zoom, full-screen, copy etc. Baked right into the edit view.
 4. Minimal Theme Settings: To manage minimal theme (you can remove this if you like. I personally find the Gruvbox theme and other options really neat, especially for studying).
 5. Style Settings: To disable the annoying Hold to zoom that comes with Minimal Plugin and use Image toolkit instead. (Trust me you don't want it)
 

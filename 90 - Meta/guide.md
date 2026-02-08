@@ -28,9 +28,6 @@ using the vault path from root so these can be viewed on GitHub as is without ne
 
 `30 - Resources/` will be the knowledge base: notes in your words, written so future you can get up to speed quickly. This is where “what I learned” lives. For rough, draft like notes which are not yet polished, use a `(raw)` suffix at the end to mark it as so. `Resources/rust/ownership/ownership_model(raw).md`. [More on Resources and how to work inside the folders](#What%20goes%20in%20Resources%20(30%20-%20Resources)).
 
-`35 - Devlog/` is for public-facing writing (==You may rename the folder as you like==). These are refined writeups that are meant to be shipped to my portfolio site. Things I understand well enough to confidently write about publically, giving an in depth technical understanding of said topic.
-*If you don't plan on doing any blog writing or technical write-ups*, having a space where your best and only best notes live, is still a plus. You can use this to know how far deep your understanding is with a particular Area and continue learning until you have a huge set of that Area under this space. [More on Devlog)](#What%20goes%20in%20Devlog%20(35%20-%20Devlog)).
-
 `40 - Archive/` is for inactive stuff. This keeps the active folders clean. If You're done with a project or something you haven't touched in weeks, move it here (inside the respective nested folder). If you plan to work on something again that was archived, move it back out. [More on Archives](#What%20Archive%20is%20(40%20-%20Archive)).
 
 `90 - Meta/` is the vault’s “operating manual”: [Templates](#Templates%20(presets%20for%20some%20of%20the%20top%20level%20folders)), [MOCs (Maps of Content)](#MOCs%20(Maps%20of%20Content)), and rules for how to run this workspace.
@@ -46,7 +43,7 @@ Start with `00 - scope` first. If you can’t explain the MVP and what “done�
 - `01 - specs` features, constraints, platforms, acceptance criteria.
 - `02 - architecture` for deciding how it should work. data model, API sketches, decisions, trade offs etc.
 - `03 - tasks` planned tasks for that project to progress, blockers which stopped progression previously, links to sources you plan to use to help with clearing these tasks.
-- *OPTIONAL* `04 - links`: For me this will contain links to published content about projects after I've shipped something worth writing about (or when I’ve drafted a post in Devlog). For you this could be sources relevant to that project, If contributing to OSS this could be links to that project repo, wiki etc.
+- *OPTIONAL* `04 - links`: For me this will contain links to published content about projects after I've shipped something. For you this could be sources relevant to that project, If contributing to OSS this could be links to that project repo, wiki etc.
 
 ## What goes in an Area (`20 - Areas`)
 
@@ -73,22 +70,15 @@ A good Resources note usually answers:
 
 This folder is allowed to grow and be messy, Don't be a perfectionist. If you are one, don't follow this template and go build a better workflow because this isn't and won't ever be perfect.
 
-## What goes in Devlog (35 - Devlog)
-
-Devlog is the “shippable writing” lane. If I can explain the topic cleanly (or if did something worth documenting), I write it here. These notes too can be drafts until the final version is born after numerous iterations. You may use tags like #draft and #final to help track such things.
-
-If your knowledge is half-baked on a topic, keep it in `Resources/` and link it from an Area’s `review_queue` if you want to revisit it.
-
 ## What Archive is (40 - Archive)
 
-Archive is not a trash can. It’s a parking lot for inactive things from Projects, Areas, Resources, and Devlog. That’s the whole point of the system: active stays visible; inactive gets out of the way.​
+Archive is not a trash can. It’s a parking lot for inactive things from Projects, Areas and Resources. That’s the whole point of the system: active stays visible; inactive gets out of the way.​
 
 I use Archive when:
 
 - A project is done or abandoned.
 - An area is paused, I haven't made much progress in a while and don't plan to.
 - A set of notes is no longer relevant to what I'm doing right now.
-- A blog draft is dead (but I don’t want to delete it).
 
 ## Templates (presets for some of the top level folders)
 
@@ -114,7 +104,7 @@ utkarsh@arch~/D/v/n/9/Templates $ tree
 
 ==PENDING!! Under Development==
 
-MOCs live in `90 - Meta/MOCs/`. An MOC is just a curated “entry point” note for a topic: it links to the best Resources notes, active Areas, relevant Projects, and any Devlog posts about a specific topic/Area.
+MOCs live in `90 - Meta/MOCs/`. An MOC is just a curated “entry point” note for a topic: it links to the best Resources notes, active Areas, relevant Projects, and any other unorganized files in your Inbox about a specific topic/Area.
 
 ==(WIP)== A template will be included showcasing how one would implement filtering which will locate files with tags if *any one* of the conditions are met. Make sure to mark your files with an appropriate tag like so #help
 
@@ -128,14 +118,12 @@ MOCs live in `90 - Meta/MOCs/`. An MOC is just a curated “entry point” note 
 
 When You're studying and want to take notes: you write in `30 - Resources/`.
 When You're building something: you work in `10 - Projects/`.
-When you want to keep your learning on track: update `20 - Areas/<Area>/01 - now` and add links to `02 - review_queue`.
-When You're ready to publish a write-up: write in `35 - Devlog/`.
-When something becomes inactive: move it to `40 - Archive/`.
+When you want to keep your learning on track: update `20 - Areas/<Area>/01 - now` and add links to `02 - review_queue`. When something becomes inactive: move it to `40 - Archive/`.
 
 ---
 ## Git (keep it clean)
 
-One commit should represent *one kind of work*. If I studied and also rewrote a devlog post, those should usually be separate commits. The goal is to make history readable later, not to "save clicks"
+One commit should represent *one kind of work*. If I studied a topic and also worked on a side project & tracked that, those should usually be separate commits. The goal is to make history readable later, not to "save clicks"
 
 ---
 
@@ -156,13 +144,8 @@ utkarsh@arch~/D/v/notebook $ tree --gitignore
 │   ├── DSA
 │   ├── Rust
 │   └── Web
-├── 35 - Devlog      # You can customize your detailed writeup space
-│   ├── blogs
-│   ├── notes
-│   └── pages
 ├── 40 - Archive     # Archive inactive projects, areas, resources
 │   ├── Areas          Mirror of root level folders (keep it nested)
-│   ├── Devlog
 │   ├── Projects
 │   └── Resources
 ├── 90 - Meta
