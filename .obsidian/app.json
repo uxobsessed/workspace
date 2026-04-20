@@ -2,7 +2,7 @@
   "attachmentFolderPath": "90 - Meta/_assets/images",
   "alwaysUpdateLinks": true,
   "showInlineTitle": false,
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "00 - Inbox",
   "useMarkdownLinks": false
 }
