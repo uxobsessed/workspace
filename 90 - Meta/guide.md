@@ -5,7 +5,9 @@
 
 Two folders do all the actual work: `10 - Notes` for capturing what you learn, `20 - Projects` for what you build with it. Everything else just supports those two.
 
-Numbers jump around on purpose. `20` to `40`, `40` to `80`. So there's room to add your own folders in between without renumbering the whole vault. If you need a `25 - Writing` & `30 - Blogs`, you have the room to create them.
+Numbers jump around on purpose. `20` to `40`, `40` to `80`. So there's room to add your own folders in between without renumbering the whole vault. If you need a `25 - Writing` & `30 - Blogs`, you have the room to create them
+
+==I've added `01 - Daily` and set up the *core plugin* Daily Notes to create a daily note with the proper filename, directly in that folder, with a simple click of the calendar icon in the side ribbon.== an example note has been left in as [[11th Sep '26]], It's pretty self explanatory so I won't be going into it more.
 
 If any of this slows you down, change it. Workflows are not a one-shoe-fits-all. *Change things around to however they work for you.*
 
@@ -14,6 +16,7 @@ If any of this slows you down, change it. Workflows are not a one-shoe-fits-all.
 ```
 notebook/
 ├── 00 - Inbox/          # unsorted stuff, random notes, rough brain dump
+├── 01 - Daily/          # Tracking the day's activity, TODOs & More
 ├── 10 - Notes/          # what you've learned, nested by domain & topic
 ├── 20 - Projects/       # what you're building, ideas, etc.
 ├── 40 - Sources/        # resources for what you're learning etc.
